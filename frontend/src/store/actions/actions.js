@@ -1,7 +1,7 @@
 
 export const fetch_todos = () => {
     return dispatch => {
-        return fetch(`http://localhost:3000/api`)
+        return fetch(`https://enigmatic-dawn-93869.herokuapp.com/api`)
             .then(res => res.json())
             .then(json => {
                 dispatch({
@@ -22,7 +22,7 @@ export const add_todo = (todo) => {
         body: JSON.stringify({ todo, isCompleted: false })
     };
     return dispatch => {
-        return fetch(`http://localhost:3000/api/addTodo`,requestOptions)
+        return fetch(`https://enigmatic-dawn-93869.herokuapp.com/api/addTodo`,requestOptions)
             .then(res => res.json())
             .then(json => {
                 dispatch({
@@ -41,7 +41,7 @@ export const update_todos = (id,isCompleted) => {
         body: JSON.stringify({isCompleted:!isCompleted })
     };
     return dispatch => {
-        return fetch(`http://localhost:3000/api/todos/${id}`,requestOptions)
+        return fetch(`https://enigmatic-dawn-93869.herokuapp.com/api/todos/${id}`,requestOptions)
             .then(res => res.json())
             .then(json => {
                 dispatch({
