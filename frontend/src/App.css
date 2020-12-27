@@ -1,0 +1,11 @@
+*{
+ margin-top: 0;
+}
+
+.header{
+  background-color: #5d3ebd;
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    color: #ffd00f;
+}
