@@ -1,4 +1,4 @@
-const dbOptions = require('../config/dbConfig')
+const dbOptions = require('../config/dbconfig')
 
 const mongoose = require('mongoose');
 mongoose.connect(dbOptions.MONGO_CONN_STR, {useNewUrlParser: true}, (err) => {
